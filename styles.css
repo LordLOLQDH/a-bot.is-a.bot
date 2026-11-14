@@ -3,3 +3,33 @@
 @media(max-width:1050px){.site-header{gap:18px}.main-nav{gap:16px}.feature-grid{grid-template-columns:repeat(2,1fr)}.mission-band{grid-template-columns:1fr 1fr}.mission-orb{display:none}.hero-wrap{padding-left:5%;padding-right:5%}}@media(max-width:760px){.site-header{height:70px;padding:0 5%;gap:12px}.menu-toggle{display:block;order:3;margin-left:auto}.header-actions{order:4}.main-nav{display:none;position:absolute;top:69px;left:0;right:0;background:white;padding:18px 6%;border-bottom:1px solid var(--line);flex-direction:column;gap:10px;box-shadow:0 15px 25px #18234a12}.main-nav.open{display:flex}.header-button{display:none}.hero-wrap{grid-template-columns:1fr;padding:50px 6% 40px;gap:35px}.hero-copy h1{font-size:clamp(52px,13vw,76px)}.hero-visual{height:340px;border-radius:22px}.bot-core{transform:scale(.82) rotate(-7deg)}.hero-meta{margin-top:35px}.status-strip{grid-template-columns:1fr 1fr;padding:18px 6%;row-gap:18px}.status-strip>div:nth-child(2){border:0}.status-strip>div:nth-child(3){padding-left:0}.section{padding:70px 6%}.section-heading{display:block}.section-heading>p{margin-top:18px}.feature-grid{grid-template-columns:1fr 1fr}.feature-card{min-height:240px;padding:17px}.feature-icon{width:70px;height:70px;font-size:33px}.feature-card h3{font-size:17px}.feature-card p{font-size:10px}.mission-band{grid-template-columns:1fr;padding:65px 7%;gap:20px}.quick-action{grid-template-columns:1fr;gap:28px}.site-footer{flex-wrap:wrap;padding:25px 6%}.site-footer>span{order:3;width:100%}.workspace-page{padding:45px 5%}.page-title-row{align-items:flex-start}.workspace-grid{grid-template-columns:1fr}.workspace-badge{display:none}.tool-card{padding:20px}.subpage{padding:50px 6%}.docs-grid,.contact-grid,.lab-tools{grid-template-columns:1fr;gap:25px}.docs-nav{position:static;display:grid;grid-template-columns:1fr 1fr}.workspace-bottom{flex-direction:column}.announcement{padding:0 5%}}@media(max-width:420px){.feature-grid{grid-template-columns:1fr}.feature-card{min-height:215px}.hero-actions{align-items:flex-start;flex-direction:column}.header-actions{gap:6px}.logo{font-size:13px}.logo-symbol{width:30px;height:30px}.hero-visual{height:300px}.chip-top{left:13px;top:25px}.chip-bottom{right:13px;bottom:25px}}
 
 .pr-preview{margin-top:16px;padding:14px;border-radius:10px;background:#f0f3ff;border:1px solid #dce3ff}.pr-preview p{font-size:10px;line-height:1.7;color:#67718e;margin:0 0 10px}.pr-preview .secondary-button{background:white}
+
+/* A-BOT 2.1 — mobile and backend form states */
+.form-status{margin:14px 0 0;padding:12px 14px;border-radius:10px;background:#eaf8f1;color:#176b4a;font-size:12px;line-height:1.5;border:1px solid #c8ead8}
+.form-status.is-error{background:#fff0ef;color:#a3342c;border-color:#f2cfca}
+button:disabled{opacity:.65;cursor:wait;transform:none!important}
+.hp-field{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
+@media(max-width:800px){
+ .site-header{height:68px;padding:0 18px;gap:10px}
+ .menu-toggle{display:block;order:3;margin-left:auto;padding:8px 10px}
+ .header-actions{order:4;gap:7px}
+ .main-nav{display:none!important;position:absolute;top:67px;left:0;right:0;margin:0;padding:16px 20px 20px;background:#fff;flex-direction:column!important;align-items:stretch;gap:0!important;border-bottom:1px solid var(--line);box-shadow:0 15px 28px #18234a18}
+ .main-nav.open{display:flex!important}
+ .main-nav a{display:block;padding:13px 4px;border-bottom:1px solid #edf0f7;font-size:13px}
+ .main-nav a:last-child{border-bottom:0}
+ .header-button{display:none}
+}
+@media(max-width:520px){
+ .announcement{font-size:8px;letter-spacing:.08em;padding:0 16px}
+ .hero-wrap{padding:42px 20px 35px;min-height:0}
+ .hero-copy h1{font-size:clamp(48px,13vw,66px)}
+ .hero-visual{height:275px}
+ .status-strip{padding:18px 20px}
+ .section{padding:58px 20px}
+ .feature-grid{grid-template-columns:1fr;gap:12px}
+ .feature-card{min-height:190px}
+ .quick-action{gap:20px}
+ .workspace-page,.subpage{padding:38px 18px 55px}
+ .tool-card,.contact-panel,.lab-widget{padding:18px}
+ .site-footer{padding:22px 18px}
+}

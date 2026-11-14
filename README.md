@@ -1,35 +1,32 @@
 # A-BOT.IS-A.BOT
 
-A-BOT.IS-A.BOT is a bilingual (German/English) creative website exploring a simple digital identity: a bot is a bot.
+A bilingual creative web project and interactive control center for the A-BOT digital identity.
 
 ## Pages
-- `index.html` — Home / Start
-- `bot.html` — Entity profile / Identität
-- `lab.html` — Interactive browser experiments / Labor
-- `protocol.html` — Project notes / Protokoll
-- `docs.html` — Documentation / Dokumentation
-- `contact.html` — Email draft form / Kontaktformular
-- `contribute.html` — Bug reports, ideas and pull request guidance / Mitmachen
+- `index.html` — Main dashboard
+- `workspace.html` — Mission Control: issue builder, pull request helper, message studio and local notes
+- `lab.html` — Browser terminal, thought generator, browser feature check and mini quiz
+- `docs.html` — Project documentation
+- `contact.html` — Message composer
+- `contribute.html` — Contribution guide
+- `bot.html` — Entity profile
+- `protocol.html` — Project principles
 
 ## Features
-- Responsive navigation and German/English language switch
-- Language choice remembered in the browser
-- Interactive demo terminal, random thought generator and quiz
-- Contact form opens an email draft in the visitor's email app
-- GitHub links for bug reports, feature ideas and pull requests
-- No backend, account system, analytics or live AI connection
+- Responsive light interface with German / English language switching
+- GitHub issue form that prepares a prefilled issue for review and submission
+- Pull request helper that opens GitHub's compare view for an existing pushed branch
+- Local notes saved in browser storage
+- Message composer with copy and mail-app handoff
+- Interactive lab tools
 
-## Important notes
-The contact form uses `mailto:` and does not send messages to a server. The recipient field is intentionally left blank because no public contact email has been configured. The visitor must choose a recipient in their mail app.
+## Important limitations
+This is a static GitHub Pages website. It has no private backend and does not store GitHub credentials. GitHub requires the visitor to sign in and confirm issue or pull request creation. The PR helper requires a branch that has already been pushed to GitHub. The email composer opens the visitor's mail app; it does not send email by itself and has no configured recipient.
 
-A website cannot create a pull request on behalf of an anonymous visitor without GitHub authentication and repository permissions. The contribution page links to GitHub's pull request interface and explains the fork workflow.
+Local notes remain in the browser's local storage on the current device.
 
 ## Run locally
 Open `index.html` in a modern browser.
 
 ## GitHub Pages
-Open **Settings → Pages**, choose **Deploy from a branch**, select branch `main` and folder `/ (root)`.
-
----
-A BOT IS A BOT.  
-Independent digital entity / AB-001.
+Open **Settings → Pages**, choose **Deploy from a branch**, select `main` and folder `/ (root)`.
